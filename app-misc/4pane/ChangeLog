@@ -1,0 +1,68 @@
+# ChangeLog for app-misc/4pane
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*4pane-5.0 (14 Jul 2017)
+
+  14 Jul 2017; David Hart <david@4pane.co.uk>: New release. There is a
+  simpler 'Find' dialog for everyday use. It is now possible to make a
+  particular fileview order its files in a decimal-aware way. Building
+  4Pane now uses Automake.
+  
+ 
+*4pane-4.0 (31 Mar 2016)
+
+  31 Mar 2016; David Hart <david@4pane.co.uk>: New release. Moving or
+  pasting files now uses threads, so cancelling a paste is possible.
+  A better method of detecting a file's system mime-type is now used.
+  4Pane can now be built with clang as well as with g++.
+ 
+*4pane-3.0 (27 Sep 2014)
+
+  27 Sep 2014; David Hart <david@4pane.co.uk>: New release. It's now
+  possible to use gtk3 instead of gtk2, providing the gtk3 version is
+  sufficiently recent. There is now an optional Preview feature for 
+  images and text files. Opening a file now also looks at the system
+  mime-type database when deciding which application to use.
+ 
+*4pane-2.0 (12 Dec 2013)
+
+  12 Dec 2013; David Hart <david@4pane.co.uk>: New release. It's now  
+  possible to mount a remote partition over ssh, using sshfs. 
+  4Pane now uses 'inotify' to keep it informed of changes to the
+  filesystem.
+  
+*4pane-1.0 (14 Jun 2012)
+
+  14 Jun 2012; David Hart <david@4pane.co.uk>: New release. Improved  
+  usability for keyboard navigation. A greater range of compressed 
+  files and archives can now be handled. Better usb-pen recognition.
+  Added a built-in su/sudo front-end for executing commands as root.
+
+*4pane-0.8.0 (07 Jan 2011)
+
+  02 Jan 2011; David Hart <david@4pane.co.uk>: New release. Flag which 
+  is the currently-focused pane by subtly highlighting its header.
+  Provide mnemonics for most menuitems. Added 'Permanently Delete' to 
+  really delete, not just move to a can. i18n-related improvements;
+  there is now an Italian and a Danish translation (thanks to 
+  Andrea Zanellato and Joe Dalton).
+
+*4pane-0.7.0 (30 Jan 2010)
+
+  30 Jan 2010; David Hart <david@4pane.co.uk>: New release. Several
+  dialogs shrunk, so they'll fit on e.g. netbooks; an overwrite option
+  when pasting into a virtual archive; locale-related improvements.
+
+*4pane-0.6.0 (13 Nov 2008)
+
+  13 Nov 2008; David Hart <david@4pane.co.uk>: New release. There is a
+  new QuickGrep dialog for simpler everyday grepping.
+
+*4pane-0.5.1 (07 May 2008)
+
+  07 May 2008; David Hart <david@4pane.co.uk>: New release. There are
+  now configure options that remove the need to hack makefile.in.
+  Improvements in mounting, moving relative symlinks, and i18n now works.
+
+  28 Dec 2007; David Hart <david@4pane.co.uk>: Initial custom ebuild.
