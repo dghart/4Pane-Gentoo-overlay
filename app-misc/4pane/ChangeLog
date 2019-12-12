@@ -2,13 +2,19 @@
 # Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*4pane-6.0 (12 Dec 2019)
+
+  12 Dec 2019; David Hart <david@4pane.co.uk>: New release. When moving
+  or pasting files, optionally retain their previous modification date.
+  Support extracting/verifying 'rar' archives, if 'unrar' is installed.
+  Previewing images now supports svg files too.
+  
 *4pane-5.0 (14 Jul 2017)
 
   14 Jul 2017; David Hart <david@4pane.co.uk>: New release. There is a
   simpler 'Find' dialog for everyday use. It is now possible to make a
   particular fileview order its files in a decimal-aware way. Building
   4Pane now uses Automake.
-  
  
 *4pane-4.0 (31 Mar 2016)
 

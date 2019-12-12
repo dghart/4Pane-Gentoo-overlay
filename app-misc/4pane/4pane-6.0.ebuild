@@ -1,4 +1,4 @@
-# Copyright 2007-2017 David Hart
+# Copyright 2007-2019 David Hart
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -12,7 +12,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="debug"
-DEPEND=">=x11-libs/wxGTK-2.8.0
+DEPEND=">=x11-libs/wxGTK-3.0.0
         app-arch/xz-utils"
 FEATURES="sign"
 
