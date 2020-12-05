@@ -1,4 +1,4 @@
-# Copyright 2007-2019 David Hart
+# Copyright 2007-2020 David Hart
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -63,26 +63,7 @@ src_install() {
 
 		dodoc LICENCE README
 		doman 4Pane.1
-
-# It would be nice if make_desktop_entry inserted the shortcut onto the user's desktop
-# but it doesn't: it puts it into /usr/share/applications/ :(
 		make_desktop_entry 4Pane "4Pane" /usr/share/4Pane/bitmaps/4PaneIcon48.png
 }
 
-pkg_postinst() {
-# See if we can work out who the user will be (remember it'll be root who's installing)
-# If so, provide a desktop shortcut in his name
-		HOMEDIR=/home/$USERNAME
-		if test -d $HOMEDIR/Desktop
-		then
-			cp -u /usr/share/4Pane/rc/4Pane.desktop $HOMEDIR/Desktop/4Pane.desktop
-			chown --reference=$HOMEDIR/Desktop $HOMEDIR/Desktop/4Pane.desktop
-			chmod 0755 $HOMEDIR/Desktop/4Pane.desktop
-		fi
-}
-
-pkg_postrm() {
-# Remove the desktop shortcut
-		rm -f /home/$USERNAME/Desktop/4Pane.desktop
-}
 
