@@ -1,4 +1,4 @@
-# Copyright 2007-2020 David Hart
+# Copyright 2007-2022 David Hart
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
